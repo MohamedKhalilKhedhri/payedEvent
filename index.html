@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Workshop</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+       <!-- hero -->
+       <section class="heroSection">
+        <div class="heroContent">
+            <h1 class="heroHeadline">Streamline Your OT Documentation and  Reporting</h1>
+            <p class="heroText">A revolutionary platform to transform the way you document, report, and collaborate with your clients.</p>
+            <div class="ctaBtns">
+                <button type="button" class="cta1" id="cta1" aria-label="Sign Up" title="Sign Up">Sign Up Now</button>
+                <button type="button" class="cta2" id="cta2" aria-label="Learn more" title="Learn more">Learn More</button>
+            </div>
+        </div>
+        <!-- signUpForm popUp -->
+        <form method="post" action="" id="myForm">
+            <h1 class="formHeader">Join the Waitlist.</h1>
+            <div>
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" id="name" name="name"  maxlength="30" placeholder="Enter your name">
+                    <span class="error-message" id="name-error" style="color: red; display: none;">This field is required</span>
+                    <span class="error-message" id="name-length-error" style="color: red; display: none;">Name must be between 3 and 30 characters.</span>
+                </div>
+            </div>
+    
+            <div>
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span class="error-message" id="email-error" style="color: red; display: none;">This field is required</span>
+                </div>
+            </div>
+    
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="" selected disabled>Select your country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                </select>
+                
+            </div>
+    
+            <button type="submit" id="submit" title="Sign Up">
+                <span id="submit-text">Sign up</span>
+                <span class="loader"></span>
+            </button>
+        </form>
+   
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

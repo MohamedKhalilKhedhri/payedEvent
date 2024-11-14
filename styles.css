@@ -328,7 +328,7 @@ button[type="submit"]:hover .loader{
 }
 /*workshop intro*/
 .workshopIntro{
-    margin:3rem 0; display:flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; padding:0 7rem;
+    margin:5rem 0; display:flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; padding:0 7rem;
 }
 /* Media Queries for Hero Section responsiveness */
 @media only screen and (max-width: 1280px) {

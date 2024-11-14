@@ -8,9 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const loader = document.querySelector('.loader');
     const submitText = document.getElementById('submit-text');
     const submitBtn = document.getElementById('submit');
-    const countdownContainer = document.querySelector('.countdown-container');
     const eventMessage = document.querySelector('.event-message');
-    const countdown = document.querySelector('.countdown');
+
 
     const form = document.getElementById('myForm');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw4MeVSBUAHJ0Me7P6FTMmYgOIXjyACSl-MnuyOhlNYutw8zpFsAaYnlwX4fdTan0M/exec';

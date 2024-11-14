@@ -224,7 +224,7 @@ button[type="submit"]:hover .loader{
     margin: 3rem 0;
 }
 
-.why-choose-us h2 {
+.sectionsHeaders {
     font-size: 2rem;
     color: black; /* Main color */
     margin-bottom: 1rem;
@@ -294,26 +294,33 @@ button[type="submit"]:hover .loader{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 3rem 0;
 
 }
 .InfoSection{
     
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
    
 }
 .aboutInfo{
-    border: 2px solid white;
     padding: 20px;
-    background-color: #f1f4f9;
+    color:white;
+    background-color: #0d3e7d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
 
 
    
 }
-.aboutInfo>h2{
+.aboutSection>h1{
     font-size: clamp(1rem, 3vw + 0.75rem, 3rem);  
     margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
 .aboutInfo>p{
     font-size: clamp(0.75rem, 1rem, 1.25rem);  
@@ -331,7 +338,7 @@ button[type="submit"]:hover .loader{
         padding: 2rem;
     }
     .InfoSection{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
     .eventContainer {
         flex-direction: column-reverse;
@@ -340,7 +347,7 @@ button[type="submit"]:hover .loader{
         padding: 0 2rem;
     }
     
-    .why-choose-us h2 {
+    .sectionsHeaders {
         font-size: 2rem;
     }
 
@@ -371,8 +378,10 @@ button[type="submit"]:hover .loader{
         font-size: 14px;
     }
  
-
-    .why-choose-us h2 {
+    .InfoSection{
+        grid-template-columns: 1fr;
+    }
+    .sectionsHeaders {
         font-size: 1.5rem;
     }
 

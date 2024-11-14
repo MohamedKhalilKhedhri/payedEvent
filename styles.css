@@ -3,6 +3,7 @@
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -12,7 +13,10 @@
 .heroSection {
     width: 100%;
     min-height: 100vh;
-   background: linear-gradient(to top right, rgb(45, 0, 85), rgb(32, 56, 100), rgb(29, 53, 87), rgb(10, 10, 30));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assets/مراد\ صورة.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,6 +216,71 @@ button[type="submit"]:hover .loader{
     }
 }
 
+/* Why Us Section */
+.why-choose-us {
+    padding: 0rem 4rem;
+    margin: 3rem 0;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    color: black; /* Main color */
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: clamp(1rem, 3vw + 0.75rem, 3rem);
+}
+
+.card-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.cardImgContainer{
+    display:flex; justify-content: center;   background-color: #5D3FD3;  width: 100%; 
+}
+.cardImgContainer>img{
+    width: 70px;
+}
+.cardTextContainer{
+     display: flex; flex-direction: column; gap: 10px;
+}
+.cardImgContainer,.cardTextContainer{
+    padding: 1rem;
+}
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-out;
+    gap: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #5D3FD3; /* Main color */
+  
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+   
+}
+
+/* ctaContainer */
+.ctaContainer{
+    width: 100%; display: flex; justify-content: center; padding:2rem
+}
+.cta{
+    cursor: pointer; font-weight: bold; font-size: large; background-color: #ff5733; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
+}
+.cta:hover{
+    background-color: #ff8063;
+}
+
 /* Media Queries for Hero Section responsiveness */
 @media only screen and (max-width: 1280px) {
     .heroSection {
@@ -227,6 +296,28 @@ button[type="submit"]:hover .loader{
     .eventContainer {
         flex-direction: column-reverse;
     }
+    .why-choose-us {
+        padding: 0 2rem;
+    }
+    
+    .why-choose-us h2 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+   
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
 }
 
 
@@ -238,6 +329,38 @@ button[type="submit"]:hover .loader{
     button[type="submit"] {
         padding: 10px;
         font-size: 14px;
+    }
+ 
+
+    .why-choose-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .time {
+        font-size: 2.5rem;  
+    }
+
+    .label {
+        font-size: 0.9rem;  
+    }
+
+    .event-message {
+        font-size: 1.2rem;  
     }
 }
 
@@ -264,16 +387,4 @@ button[type="submit"]:hover .loader{
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .time {
-        font-size: 2.5rem;  
-    }
 
-    .label {
-        font-size: 0.9rem;  
-    }
-
-    .event-message {
-        font-size: 1.2rem;  
-    }
-}

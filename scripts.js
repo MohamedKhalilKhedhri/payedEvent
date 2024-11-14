@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (remainingTime < 0) {
             if (remainingTimeAfterEvent > 0) {
                 clearInterval(interval);
-                eventMessage.innerHTML = "<p>Event starts: Today</p>";
+                eventMessage.innerHTML = "<p>الفعالية تبدأ اليوم</p>";
                 displayCountdown(0, 0, 0, 0);
             } else {
                 clearInterval(interval);
-                eventMessage.innerHTML = "<p>Event Done</p>";
+                eventMessage.innerHTML = "<p>انتهت الفعالية</p>";
                 displayCountdown(0, 0, 0, 0);
             }
         } else {
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.disabled = true;
         submitBtn.style.cursor = "not-allowed";
         loader.style.display = 'inline-block';
-        submitText.textContent = 'Submitting';
+        submitText.textContent = 'جارٍ التسجيل';
 
         let isValid = true;
 
@@ -113,23 +113,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: formData,
             })
             .then(response => {
-                swal("Success!", "You have successfully signed up!", "success");
+                swal("تم!", "لقد تم التسجيل بنجاح!", "success");
                 form.reset();  // Reset the form
                 loader.style.display = 'none';
-                submitText.textContent = 'Sign up';
+                submitText.textContent = 'احجز مكانك الآن';
                 submitBtn.disabled = false;
                 submitBtn.style.cursor = "pointer";
             })
             .catch(error => {
-                swal("Error!", "There was an issue with your submission. Please try again.", "error");
+                swal("خطأ!", "حدثت مشكلة أثناء التسجيل. يرجى المحاولة مرة أخرى.", "error");
                 loader.style.display = 'none';
-                submitText.textContent = 'Sign up';
+                submitText.textContent = 'احجز مكانك الآن';
                 submitBtn.disabled = false;
                 submitBtn.style.cursor = "pointer";
             });
         } else {
             loader.style.display = 'none';
-            submitText.textContent = 'Sign up';
+            submitText.textContent = 'احجز مكانك الآن';
             submitBtn.disabled = false;
             submitBtn.style.cursor = "pointer";
         }

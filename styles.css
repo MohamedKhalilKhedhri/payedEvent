@@ -222,6 +222,8 @@ button[type="submit"]:hover .loader{
 .why-choose-us {
     padding: 0rem 4rem;
     margin: 3rem 0;
+ 
+    
 }
 
 .sectionsHeaders {
@@ -237,6 +239,7 @@ button[type="submit"]:hover .loader{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
+   
 }
 .cardImgContainer{
     display:flex; justify-content: center;   background-color: #1877F2;  width: 100%; 
@@ -331,6 +334,24 @@ button[type="submit"]:hover .loader{
     margin:5rem 0; display:flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; padding:0 7rem;
 }
 /* Media Queries for Hero Section responsiveness */
+
+@media only screen and (min-width: 1440px) {
+    .why-choose-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card-container {
+        
+        grid-template-columns: repeat(5, minmax(250px, 1fr));
+        max-width: 1440px;
+       
+    }
+    
+
+}
 @media only screen and (max-width: 1280px) {
     .heroSection,.aboutSection {
         padding: 4rem;

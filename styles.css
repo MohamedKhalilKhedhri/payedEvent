@@ -117,7 +117,7 @@ input::placeholder {
 button[type="submit"] {
     width: 100%;
     padding: 14px;
-    background:#ff5733;
+    background:#1877F2;;
     color: white;
     border: none;
     border-radius: 5px;
@@ -128,7 +128,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #ff8063;
+    background: #1876f2de;
 }
 
 #submit-text {
@@ -139,24 +139,24 @@ button[type="submit"]:hover {
 .loader {
     width: 25px;
     aspect-ratio: 4;
-    background: radial-gradient(circle closest-side, white 90%, #ff5733) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #1877F2) 0/calc(100%/3) 100% space;
     clip-path: inset(0 100% 0 0);
     animation: l1 1s steps(4) infinite;
     transition: 0.1s ease-out;
 }
 button[type="submit"]:hover .loader{
-    background: radial-gradient(circle closest-side, white 90%, #ff8063) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #1876f2de) 0/calc(100%/3) 100% space;
 }
 @keyframes l1 {to {clip-path: inset(0 -34% 0 0)}}
 
 /* Alert */
 .swal-button--confirm {
-    background: #ff5733;
+    background: #1877F2;;
     color: #fff; /* White text */
 }
 
 .swal-button--confirm:hover {
-    background: #ff8063 !important; 
+    background: #1876f2de !important; 
 }
 
 .swal-text {
@@ -237,7 +237,7 @@ button[type="submit"]:hover .loader{
     gap: 1rem;
 }
 .cardImgContainer{
-    display:flex; justify-content: center;   background-color: #5D3FD3;  width: 100%; 
+    display:flex; justify-content: center;   background-color: #1877F2;;  width: 100%; 
 }
 .cardImgContainer>img{
     width: 70px;
@@ -260,7 +260,7 @@ button[type="submit"]:hover .loader{
 .card h3 {
     font-size: 1.5rem;
     text-align: center;
-    color: #5D3FD3; /* Main color */
+    color: #1877F2;; /* Main color */
   
 }
 
@@ -275,10 +275,10 @@ button[type="submit"]:hover .loader{
     width: 100%; display: flex; justify-content: center; padding:2rem
 }
 .cta{
-    cursor: pointer; font-weight: bold; font-size: large; background-color: #ff5733; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
+    cursor: pointer; font-weight: bold; font-size: large; background-color: #1877F2;; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
 }
 .cta:hover{
-    background-color: #ff8063;
+    background-color: #1876f2d2;;
 }
 
 /* Media Queries for Hero Section responsiveness */

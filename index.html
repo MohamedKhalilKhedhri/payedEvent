@@ -10,79 +10,70 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-       <!-- hero -->
-       <section class="heroSection">
+    <!-- hero -->
+    <section class="heroSection">
         <div class="heroContent">
             <h1 class="heroHeadline">Streamline Your OT Documentation and  Reporting</h1>
             <p class="heroText">A revolutionary platform to transform the way you document, report, and collaborate with your clients.</p>
         </div>
         <!-- signUpForm popUp -->
-       <div class="eventContainer">
-        <form method="post" action="" id="myForm">
-            <h1 class="formHeader">Join the Waitlist.</h1>
-            <div>
-                <label for="name">Name:</label>
+        <div class="eventContainer">
+            <form method="post" action="" id="myForm">
+                <h1 class="formHeader">Join the Waitlist.</h1>
                 <div>
-                    <input type="text" id="name" name="name"  maxlength="30" placeholder="Enter your name">
-                    <span class="error-message" id="name-error" style="color: red; display: none;">This field is required</span>
-                    <span class="error-message" id="name-length-error" style="color: red; display: none;">Name must be between 3 and 30 characters.</span>
+                    <label for="name">Name:</label>
+                    <div>
+                        <input type="text" id="name" name="name" maxlength="30" placeholder="Enter your name">
+                        <span class="error-message" id="name-error" style="color: red; display: none;">This field is required</span>
+                        <span class="error-message" id="name-length-error" style="color: red; display: none;">Name must be between 3 and 30 characters.</span>
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="email">Email:</label>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span class="error-message" id="email-error" style="color: red; display: none;">This field is required</span>
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="phone">Phone Number (Kuwait):</label>
+                    <div>
+                        <input type="text" id="phone" name="phone" placeholder="+965xxxxxxxx" maxlength="13">
+                        <span class="error-message" id="phone-error" style="color: red; display: none;">This field is required</span>
+                        <span class="error-message" id="phone-format-error" style="color: red; display: none;">Please enter a valid phone number (+965 followed by 8 digits).</span>
+                    </div>
+                </div>
+                <button type="submit" id="submit" title="Sign Up">
+                    <span id="submit-text">Sign up</span>
+                    <span class="loader"></span>
+                </button>
+            </form>
+            <div class="countdown-container">
+                <div class="event-message">
+                    <p>Event starts in:</p>
+                </div>
+                <div class="countdown">
+                  <div class="time-unit">
+                    <span id="days" class="time"></span>
+                    <span class="label">Days</span>
+                  </div>
+                  <div class="time-unit">
+                    <span id="hours" class="time"></span>
+                    <span class="label">Hours</span>
+                  </div>
+                  <div class="time-unit">
+                    <span id="minutes" class="time"></span>
+                    <span class="label">Minutes</span>
+                  </div>
+                  <div class="time-unit">
+                    <span id="seconds" class="time"></span>
+                    <span class="label">Seconds</span>
+                  </div>
                 </div>
             </div>
-    
-            <div>
-                <label for="email">Email:</label>
-                <div>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <span class="error-message" id="email-error" style="color: red; display: none;">This field is required</span>
-                </div>
-            </div>
-    
-            <div>
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="" selected disabled>Select your country</option>
-                    <option value="Afghanistan">Afghanistan</option>
-                    <option value="Albania">Albania</option>
-                    <option value="Algeria">Algeria</option>
-                    <option value="American Samoa">American Samoa</option>
-                    <option value="Andorra">Andorra</option>
-                    <option value="Angola">Angola</option>
-                    <option value="Anguilla">Anguilla</option>
-                </select>
-                
-            </div>
-    
-            <button type="submit" id="submit" title="Sign Up">
-                <span id="submit-text">Sign up</span>
-                <span class="loader"></span>
-            </button>
-        </form>
-        <div class="countdown-container">
-            <div class="event-message">
-                <p>Event starts in:</p>
-            </div>
-            <div class="countdown">
-              <div class="time-unit">
-                <span id="days" class="time"></span>
-                <span class="label">Days</span>
-              </div>
-              <div class="time-unit">
-                <span id="hours" class="time"></span>
-                <span class="label">Hours</span>
-              </div>
-              <div class="time-unit">
-                <span id="minutes" class="time"></span>
-                <span class="label">Minutes</span>
-              </div>
-              <div class="time-unit">
-                <span id="seconds" class="time"></span>
-                <span class="label">Seconds</span>
-              </div>
-            </div>
-            
-          </div>
-       </div>
-   
+        </div>
     </section>
     
     <script src="scripts.js"></script>

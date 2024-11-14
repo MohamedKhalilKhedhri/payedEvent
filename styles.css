@@ -7,10 +7,12 @@
 }
 
 /* Hero Section Styling */
+
+/*background: linear-gradient(to top right, #4285f4, #3367d6, #2a56c6, #1a45a3);*/
 .heroSection {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to bottom left, rgb(82, 24, 145), rgb(32, 56, 100), rgb(160, 118, 255));
+   background: linear-gradient(to top right, rgb(45, 0, 85), rgb(32, 56, 100), rgb(29, 53, 87), rgb(10, 10, 30));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,17 +113,18 @@ input::placeholder {
 button[type="submit"] {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(45deg, rgb(82, 24, 145), rgb(32, 56, 100));
+    background:#ff5733;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     position: relative;
+    transition: 0.1s ease-out;
 }
 
 button[type="submit"]:hover {
-    background: linear-gradient(45deg, rgb(160, 118, 255), rgb(82, 24, 145)); /* Lighter gradient for hover */
+    background: #ff8063;
 }
 
 #submit-text {
@@ -132,21 +135,24 @@ button[type="submit"]:hover {
 .loader {
     width: 25px;
     aspect-ratio: 4;
-    background: radial-gradient(circle closest-side, white 90%, rgb(82, 24, 145)) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #ff5733) 0/calc(100%/3) 100% space;
     clip-path: inset(0 100% 0 0);
     animation: l1 1s steps(4) infinite;
+    transition: 0.1s ease-out;
 }
-
+button[type="submit"]:hover .loader{
+    background: radial-gradient(circle closest-side, white 90%, #ff8063) 0/calc(100%/3) 100% space;
+}
 @keyframes l1 {to {clip-path: inset(0 -34% 0 0)}}
 
 /* Alert */
 .swal-button--confirm {
-    background: linear-gradient(45deg, rgb(82, 24, 145), rgb(32, 56, 100));
+    background: #ff5733;
     color: #fff; /* White text */
 }
 
 .swal-button--confirm:hover {
-    background: linear-gradient(45deg, rgb(160, 118, 255), rgb(82, 24, 145)) !important; 
+    background: #ff8063 !important; 
 }
 
 .swal-text {

@@ -336,7 +336,7 @@ button[type="submit"]:hover .loader{
 /* Media Queries for Hero Section responsiveness */
 
 @media only screen and (min-width: 1440px) {
-    .why-choose-us {
+    .why-choose-us,.aboutSection {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -348,6 +348,11 @@ button[type="submit"]:hover .loader{
         grid-template-columns: repeat(5, minmax(250px, 1fr));
         max-width: 1440px;
        
+    }
+
+    .InfoSection{
+        max-width: 1440px;
+      
     }
     
 

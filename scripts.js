@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = false;
     submitBtn.style.cursor = "pointer";
 
-    const eventDate = new Date("November 24, 2024 00:00:00").getTime();
+    const eventDate = new Date("November 23, 2024 00:00:00").getTime();
     const eventEndDate = eventDate + (24 * 60 * 60 * 1000);  // 24 hours after event date
 
     // Update the countdown every 1 second
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (remainingTime < 0) {
             if (remainingTimeAfterEvent > 0) {
                 clearInterval(interval);
-                eventMessage.innerHTML = "<p>الفعالية تبدأ اليوم</p>";
+                eventMessage.innerHTML = "<p>الفعالية تبدأ اليوم في الساعة 7 مساءً بتوقيت الكويت على Microsoft Teams</p>";
                 displayCountdown(0, 0, 0, 0);
             } else {
                 clearInterval(interval);

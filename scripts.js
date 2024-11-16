@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = document.getElementById('submit');
     const eventMessage = document.querySelector('.event-message');
     const form = document.getElementById('myForm');
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5aF9wCCVm9Imcvjmci5xFKcBhtnVXZjRroJCypXDrDo71QbOEGMzg9HQVnDn5c1Y1/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlH-jyVJQP10nStHqrkuPVcWkL8ruJI_sbsaUJjuwLLz2OuE17YgcQHUl4HU5Nb4heTQ/exec';
 
     loader.style.display = 'none';
     submitBtn.disabled = false;

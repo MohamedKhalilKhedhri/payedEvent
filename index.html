@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <title>ورشة السلام الداخلي وطاقة جلب الارزاق</title>
     <link rel="icon" href="assets/logo.png" type="image/png"> <!-- Link to your PNG favicon -->
 
@@ -44,11 +44,12 @@
                 <div>
                     <label for="phone">رقم الهاتف (الكويت):</label>
                     <div>
-                        <input type="text" id="phone" name="phone" placeholder="+965xxxxxxxx" maxlength="13" dir="ltr">
-                        <span class="error-message" id="phone-error" style="color: red; display: none;">هذا الحقل مطلوب</span>
-                        <span class="error-message" id="phone-format-error" style="color: red; display: none;">يرجى إدخال رقم هاتف صالح (965+ متبوعًا بثمانية أرقام).</span>
+                        <input type="number" id="phone" name="phone" placeholder="أدخل رقم الهاتف" maxlength="8">
+                        <span class="error-message" id="phone-error" style="color: red; display: none;">يرجى إدخال رقم الهاتف.</span>
+                        <span class="error-message" id="phone-format-error" style="color: red; display: none;">رقم الهاتف يجب أن يتكون من 8 أرقام فقط.</span>
                     </div>
                 </div>
+                
                 <button type="submit" id="submit" title="تسجيل">
                     <span id="submit-text">احجز مكانك الآن</span>
                     <span class="loader"></span>
@@ -81,17 +82,33 @@
             </div>
            
         </div>
+        
     </section>
-    <!-- Workshop Introduction Section -->
-    <section class="workshopIntro" >
-        <h2 class="sectionsHeaders">حول الورشة</h2>
-        <p class="heroText" style="color: black;">
-            تخيل لو كانت هناك طريقة بسيطة وعملية تمكنك من استعادة السلام الداخلي وجذب الرزق الذي تريده. في ورشة عمل "السلام الداخلي وجذب الأرزاق"، سنتعلم سويًا كيف نمسح المعتقدات السلبية التي قد تكون تراكمت وأثرت على سعادتك ونجاحك. إنها تجربة مستوحاة من قيمنا الثقافية، تهدف إلى تمهيد الطريق لك نحو حياة متوازنة ومليئة بالخير.
-
-        </p>
-        <div class="ctaContainer" style="padding: 0;"><a  href="#myHero" class="cta">احجز مكانك الآن</a></div>
+    <!-- Workshop Presentation Section -->
+    <section class="workshopPresentationContainer">
+        <section class="workshopPresentationSection">
+            <h2 class="workshopPresentationHeader">حول الورشة</h2>
+            <p class="workshopPresentationText" style="color: black;">
+                هل تبحث عن وسيلة لتحقيق السلام الداخلي الحقيقي وتحرير نفسك من قيود الماضي؟
+                هل ترغب في اكتشاف قوة جديدة تساعدك على تحسين حياتك وجذب الخير والرزق إلى حياتك؟
+                نحن ندعوك للانضمام إلى ورشة استثنائية تغير حياتك!
+                خلال هذه الورشة، ستتعرف على مزيج رائع من تعاليم ديننا وتقنيات القبائل القديمة تمكّنك من
+                التخلص من المشاعر والأفكار السلبية والذكريات المؤلمة وتحقيق السلام الداخلي والانسجام الروحي
+                وفتح أبواب جديدة لتحقيق النجاح وجلب الأرزاق.
+            </p>
+          
+        </section>
+    
+        <!-- Why Our Workshop Special Section -->
+        <section class="workshopPresentationSection">
+            <h2 class="workshopPresentationHeader">لماذا هذه الورشة مميزة؟</h2>
+            <p class="workshopPresentationText" style="color: black;">
+                نمزج بين تعاليم ديننا الإسلامي الحنيف حول السلام الروحي وبين قوة تقنية الهوبونوبونو لتحرير النفس.
+                هذا المزيج الفريد يمنحك أدوات عملية لتغيير حياتك ومساعدة نفسك والآخرين على تحقيق التوازن والنجاح.
+            </p>
+        </section>
     </section>
-
+    <div class="ctaContainer" style=""><a href="#myHero" class="cta" style="">احجز مكانك الآن</a></div>
     <!-- Features Section -->
     <section id="features" class="why-choose-us">
         <h2 class="sectionsHeaders">ماذا ستحصل من الورشة؟</h2>
@@ -99,36 +116,56 @@
             <div class="card">
                 <div class="cardImgContainer"> <img src="assets/harmony.png" alt=""></div>
                 <div class="cardTextContainer">
-                    <h3>استعادة التوازن والسلام الداخلي</h3>
-                    <p>اكتشف طرقًا فعالة لاستعادة سلامك الداخلي، حيث ستتعلم تقنيات تساعدك على تجاوز الضغوط اليومية واستعادة شعورك بالهدوء.</p>
+                    <h3>تحقيق السلام الداخلي</h3>
+                    <p>الشعور بالهدوء النفسي والراحة العاطفية، بعيدًا عن التوتر والقلق.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="cardImgContainer"> <img src="assets/meditation.png" alt=""></div>
+                <div class="cardImgContainer"> <img src="assets/self-confidence.png" alt=""></div>
                 <div class="cardTextContainer">
-                    <h3>تحرير نفسك من المعتقدات السلبية</h3>
-                    <p>سنساعدك في فك قيود المعتقدات السلبية التي تعيق تقدمك، مما يمكّنك من فتح آفاق جديدة لتحقيق طموحاتك وأهدافك.</p>
+                    <h3>زيادة الإيجابية والثقة بالنفس</h3>
+                    <p>تعزيز الطاقة الإيجابية والقدرة على مواجهة التحديات بثقة وإيمان بالذات.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="cardImgContainer"> <img src="assets/wealth.png" alt=""></div>
                 <div class="cardTextContainer">
-                    <h3>توليد طاقة إيجابية لجذب الرزق والسعادة</h3>
-                    <p>تعلم كيف تبني طاقة إيجابية في حياتك، مما يفتح لك أبواب الفرص ويعزز شعورك بالسعادة والرضا.</p>
+                    <h3>تحسين استقبال طاقة الوفرة</h3>
+                    <p>فتح أبواب جديدة للرزق والخير، مع شعور قوي بالاستحقاق والقدرة على استقبال البركات.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="cardImgContainer"> <img src="assets/chain.png" alt=""></div>
                 <div class="cardTextContainer">
-                    <h3>تقنيات للتحرر من القيود الذهنية والطاقة السلبية</h3>
-                    <p>استكشف طرقًا عملية للتخلص من القيود الذهنية والطاقة السلبية، مما يمنحك حرية أكبر في التعبير عن ذاتك وعيش حياتك بشكل كامل.</p>
-                </div>
+                    <h3>تحرير النفس من القيود</h3>
+                    <p>إزالة المعتقدات السلبية والعوائق الذهنية التي تمنعك من تحقيق النجاح والوفرة.</p></div>
             </div>
             <div class="card">
                 <div class="cardImgContainer"> <img src="assets/support.png" alt=""></div>
                 <div class="cardTextContainer">
-                    <h3>دعم شامل لتحقيق الوفرة والنجاح</h3>
-                    <p>ستجد في هذه الورشة الدعم الكامل الذي تحتاجه لتطوير نفسك وتحقيق النجاح في جميع مجالات حياتك، سواء الشخصية أو المهنية.</p>
+                    <h3>تحسين العلاقات الشخصية والمهنية</h3>
+                     <p>القدرة على تحسين تواصلك مع الآخرين وبناء علاقات قائمة على الاحترام والتفاهم.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImgContainer"> <img src="assets/meditation.png" alt=""></div>
+                <div class="cardTextContainer">
+                      <h3>توازن روحي ونفسي</h3>
+                      <p>الجمع بين الوعي الروحي والتوازن النفسي لتحقيق الانسجام الكامل في حياتك.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImgContainer"> <img src="assets/step.png" alt=""></div>
+                <div class="cardTextContainer">
+                     <h3>اتخاذ خطوات عملية نحو الأهداف</h3>
+                     <p>القدرة على تحسين تواصلك مع الآخرين وبناء علاقات قائمة على الاحترام والتفاهم.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImgContainer"> <img src="assets/key-person.png" alt=""></div>
+                <div class="cardTextContainer">
+                     <h3>شعور قوي بالتحكم في حياتك</h3>
+                     <p>إدراك أنك صانع واقعك، مع امتلاك القوة لتغيير أي جانب من حياتك نحو الأفضل.</p>
                 </div>
             </div>
         </div>
@@ -143,11 +180,11 @@
                
             <div class="aboutInfo">     
                 <h2>تاريخ الحدث:</h2>        
-                <p>السبت، 23 نوفمبر 2024</p>
+                <p>السبت 30 نوفمبر 2024</p>
             </div>
             <div class="aboutInfo">
                 <h2>الثمن:</h2>
-                <p>مجانا</p>
+                <p>٩ دنانير كويتية</p>
             </div>
             <div class="aboutInfo">
                 <h2>الوقت:</h2>
@@ -156,7 +193,7 @@
             </div>
             <div class="aboutInfo">
                 <h2>المدة:</h2>
-              <p>90 دقيقة</p>
+              <p>3 ساعات</p>
               
             </div>
             <div class="aboutInfo">
@@ -168,12 +205,74 @@
         </div>
        
     </section>
-
+    <section class="programFeaturesContainer">
+        <h2 class="programFeaturesHeader">مزايا البرنامج</h2>
+        <div class="featuresGrid">
+            <!-- Feature 1 -->
+            <div class="featureCard">
+                <h3>جلسة استشارية فردية مجانية</h3>
+                <p>جلسة استشارية قصيرة لمدة 30 دقيقة بعد انتهاء البرنامج، لمساعدة المشاركين على تطبيق ما تعلموه في حياتهم الشخصية أو المهنية.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="featureCard">
+                <h3>مواد تعليمية إضافية</h3>
+                <p>ملفات PDF أو مقاطع فيديو ملخصة للبرنامج، تحتوي على أهم النقاط والأدوات التي تم مناقشتها في الورشة.</p>
+                <p>وصول إلى أوراق عمل أو تمارين إضافية لمساعدة المشاركين على تطبيق المفاهيم بشكل عملي.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="featureCard">
+                <h3>دخول حصري لمجموعة دعم عبر الإنترنت</h3>
+                <p>مجموعة خاصة على منصات مثل واتساب أو تيليجرام، حيث يمكن للمشاركين طرح الأسئلة، تبادل التجارب، والتواصل مع بعضهم البعض بعد البرنامج.</p>
+                <p>إمكانية الوصول إلى استشارات وتوجيه إضافي من قبل المدرب.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="featureCard">
+                <h3>شهادة حضور مهنية</h3>
+                <p>شهادة إلكترونية معتمدة من البرنامج يمكن للمشاركين استخدامها لإضافة قيمة إلى سيرتهم الذاتية أو مشاركتها على منصات مثل لينكدإن.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="featureCard">
+                <h3>تسجيل فيديو للبرنامج</h3>
+                <p>إتاحة تسجيل كامل للبرنامج (لمن يرغب في المراجعة لاحقًا) يمكن للمشاركين العودة إليه في أي وقت لمراجعة المواد.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="featureCard">
+                <h3>خصم على برامج مستقبلية</h3>
+                <p>خصم 10-20% على البرامج أو الاستشارات المستقبلية للمشاركين الذين سجلوا في البرنامج الحالي.</p>
+            </div>
+            <!-- Feature 7 -->
+            <div class="featureCard">
+                <h3>مجموعة من الأدوات الذهنية والإبداعية</h3>
+                <p>أدوات وتمارين مصممة خصيصًا لمساعدة المشاركين على تنمية قدراتهم الذهنية والتحفيزية، مثل تقنيات إدارة الوقت، وتحقيق الأهداف.</p>
+            </div>
+            <!-- Feature 8 -->
+            <div class="featureCard">
+                <h3>دعم ما بعد البرنامج</h3>
+                <p>متابعة لمدة أسبوعين بعد انتهاء البرنامج، حيث يمكن للمشاركين الاستفسار عن أي شيء قد يواجهونه عند تطبيق ما تعلموه.</p>
+            </div>
+            <!-- Feature 9 -->
+            <div class="featureCard">
+                <h3>محتوى حصري وتحديثات مستمرة</h3>
+                <p>وصول مستمر إلى مقاطع فيديو تعليمية جديدة أو نصائح عبر البريد الإلكتروني أو التطبيقات الخاصة بالبرنامج.</p>
+            </div>
+            <!-- Feature 10 -->
+            <div class="featureCard">
+                <h3>دعوة لحضور ورش عمل مستقبلية مجانًا</h3>
+                <p>دعوة لحضور ورش عمل أو ندوات قصيرة في المستقبل، حيث يمكن للمشاركين تعميق معرفتهم ومهاراتهم بشكل مستمر.</p>
+            </div>
+            <!-- Feature 11 -->
+            <div class="featureCard">
+                <h3>تواصل مباشر مع المدرب</h3>
+                <p>إمكانية طرح الأسئلة مباشرة خلال البرنامج أو بعده في جلسات خاصة عبر منصات تواصل مثل Zoom أو Skype.</p>
+            </div>
+        </div>
+    </section>
+    
     <!-- encouraging section -->
     <section class="workshopIntro">
         <h2 class="sectionsHeaders">ماذا تنتظر؟ انضم إلينا الآن!</h2>
         <p class="heroText" style="color: black;">
-            لا تفوت فرصة المشاركة في هذه الورشة لتجديد طاقتك وجذب الرزق. احجز مكانك معنا الآن!
+            لا تفوّت هذه الفرصة الفريدة لتحقق السلام الداخلي وتجذب طاقة الوفرة إلى حياتك!
         </p>
         <div class="ctaContainer" style="padding: 0;"><a  href="#myHero" class="cta">احجز مكانك الآن</a></div>
     </section>

@@ -4,7 +4,7 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Tajawal", sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -93,6 +93,7 @@ label {
 /* Input and Select */
 input[type="text"],
 input[type="email"],
+input[type="number"],
 select {
     width: 100%;
     padding: 12px;
@@ -119,7 +120,7 @@ input::placeholder {
 button[type="submit"] {
     width: 100%;
     padding: 14px;
-    background:#1877F2;;
+    background:#D2B48C;;
     color: white;
     border: none;
     border-radius: 5px;
@@ -130,7 +131,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #1877F2ed;
+    background: #D2B48Ced;
 }
 
 #submit-text {
@@ -141,24 +142,24 @@ button[type="submit"]:hover {
 .loader {
     width: 25px;
     aspect-ratio: 4;
-    background: radial-gradient(circle closest-side, white 90%, #1877F2) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #D2B48C) 0/calc(100%/3) 100% space;
     clip-path: inset(0 100% 0 0);
     animation: l1 1s steps(4) infinite;
     transition: 0.1s ease-out;
 }
 button[type="submit"]:hover .loader{
-    background: radial-gradient(circle closest-side, white 90%, #1877F2ed) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #D2B48Ced) 0/calc(100%/3) 100% space;
 }
 @keyframes l1 {to {clip-path: inset(0 -34% 0 0)}}
 
 /* Alert */
 .swal-button--confirm {
-    background: #1877F2;;
+    background: #D2B48C;;
     color: #fff; /* White text */
 }
 
 .swal-button--confirm:hover {
-    background: #1877F2ed !important; 
+    background: #D2B48Ced !important; 
 }
 
 .swal-text {
@@ -170,6 +171,7 @@ button[type="submit"]:hover .loader{
 /* Countdown */
 .countdown-container {
     text-align: center;
+  
 }
 
 .countdown {
@@ -178,6 +180,7 @@ button[type="submit"]:hover .loader{
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+   
 }
 
 .time-unit {
@@ -189,13 +192,17 @@ button[type="submit"]:hover .loader{
 .time {
     font-size: 4rem;
     font-weight: bold;
-    color: #1877F2;
+    color: #D2B48C;
     animation: fadeIn 1s ease-in-out;
+    width: 1em;
+    text-align: center; 
+    display: inline-block; 
 }
+
 
 .label {
     font-size: 1.2rem;
-    color: #1877F2;
+    color: #D2B48C;
     text-transform: uppercase;
 }
 
@@ -217,6 +224,40 @@ button[type="submit"]:hover .loader{
         transform: translateY(0);
     }
 }
+/*workshop presentation*/
+
+.workshopPresentationContainer {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+ 
+}
+
+
+.workshopPresentationSection {
+    flex: 1; 
+    padding: 20px;
+    background: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workshopPresentationHeader {
+    font-size: clamp(1rem, 3vw + 0.75rem, 3rem); 
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.workshopPresentationText {
+      font-size: clamp(0.75rem, 1.15rem, 1.5rem);  
+    line-height: 1.6;
+    color: #555;
+}
+
+
 
 /* Why Us Section */
 .why-choose-us {
@@ -237,12 +278,12 @@ button[type="submit"]:hover .loader{
 .card-container {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     gap: 1rem;
    
 }
 .cardImgContainer{
-    display:flex; justify-content: center;   background-color: #1877F2;  width: 100%; 
+    display:flex; justify-content: center;   background-color: #D2B48C;  width: 100%; 
 }
 .cardImgContainer>img{
     width: 70px;
@@ -267,7 +308,7 @@ button[type="submit"]:hover .loader{
 .card h3 {
     font-size: 1.5rem;
     text-align: center;
-    color: #1877F2; /* Main color */
+    color: #D2B48C; /* Main color */
   
 }
 
@@ -279,13 +320,13 @@ button[type="submit"]:hover .loader{
 
 /* ctaContainer */
 .ctaContainer{
-    width: 100%; display: flex; justify-content: center; padding:2rem
+    width: 100%; display: flex; justify-content: center; padding:2rem;
 }
 .cta{
-    cursor: pointer; font-weight: bold; font-size: large; background-color: #1877F2; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
+    cursor: pointer; font-weight: bold; font-size: large; background-color: #D2B48C; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
 }
 .cta:hover{
-    background-color: #1877F2ed;
+    background-color: #c1a581ed;
 }
 /*about section*/
 .aboutSection{
@@ -310,7 +351,7 @@ button[type="submit"]:hover .loader{
 .aboutInfo{
     padding: 20px;
     color:white;
-    background-color: #0d3e7d;
+    background-color: #8d785d;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -333,8 +374,51 @@ button[type="submit"]:hover .loader{
 .workshopIntro{
     margin:5rem 0; display:flex; flex-direction: column; align-items: center; gap: 30px; text-align: center; padding:0 7rem;
 }
-/* Media Queries for Hero Section responsiveness */
 
+.programFeaturesContainer {
+    padding: 3rem 20px;
+    background-color: #f9f9f9;
+}
+
+.programFeaturesHeader {
+    text-align: center;
+    font-size: clamp(1rem, 3vw + 0.75rem, 3rem);
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.featureCard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featureCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #D2B48C;
+}
+
+.featureCard p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Media Queries for Hero Section responsiveness */
 @media only screen and (min-width: 1440px) {
     .why-choose-us,.aboutSection {
         display: flex;
@@ -345,7 +429,7 @@ button[type="submit"]:hover .loader{
 
     .card-container {
         
-        grid-template-columns: repeat(5, minmax(250px, 1fr));
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
         max-width: 1440px;
        
     }
@@ -363,6 +447,10 @@ button[type="submit"]:hover .loader{
     }
     .workshopIntro{
         padding:0 4rem;
+    }
+    .card-container {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -387,12 +475,10 @@ button[type="submit"]:hover .loader{
         font-size: 2rem;
     }
 
-    .card-container {
-        margin-top: 40px;
-        grid-template-columns: 1fr 1fr;
+    .workshopPresentationContainer {
+        flex-direction: column; 
+        gap: 30px; 
     }
-
-   
 
     .card h3 {
         font-size: 1.3rem;
@@ -403,11 +489,26 @@ button[type="submit"]:hover .loader{
     }
 }
 
+@media (max-width: 768px) {
+    .programFeaturesHeader {
+        font-size: 1.5rem;
+    }
+
+    .featureCard h3 {
+        font-size: 1.25rem;
+    }
+
+    .featureCard p {
+        font-size: 0.9rem;
+    }
+}
+
 
 @media only screen and (max-width: 640px) {
 
     input[type="text"],
     input[type="email"],
+    input[type="number"],
     select,
     button[type="submit"] {
         padding: 10px;
@@ -471,5 +572,6 @@ button[type="submit"]:hover .loader{
         font-size: 1.2rem; 
     }
 }
+
 
 

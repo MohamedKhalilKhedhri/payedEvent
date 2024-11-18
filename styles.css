@@ -38,6 +38,7 @@ html{
 
 .heroHeadline {
     font-size: clamp(1.5rem, 4vw + 1rem, 4rem);  
+    color: #088F8F;
 }
 
 .heroContent {
@@ -229,7 +230,7 @@ button[type="submit"]:hover .loader{
 .workshopPresentationContainer {
     display: flex;
     gap: 20px; 
-    padding: 20px;
+    padding: 0rem 4rem;
     flex-wrap: wrap;
     margin: 3rem 0;
  
@@ -445,7 +446,7 @@ button[type="submit"]:hover .loader{
     .heroSection,.aboutSection {
         padding: 4rem;
     }
-    .workshopIntro{
+    .workshopIntro,.workshopPresentationContainer{
         padding:0 4rem;
     }
     .card-container {
@@ -458,7 +459,7 @@ button[type="submit"]:hover .loader{
     .heroSection,.aboutSection {
         padding: 2rem;
     }
-    .workshopIntro{
+    .workshopIntro,.workshopPresentationContainer{
         padding:0 2rem;
     }
     .InfoSection{

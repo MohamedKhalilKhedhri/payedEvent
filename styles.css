@@ -377,7 +377,7 @@ button[type="submit"]:hover .loader{
 }
 
 .programFeaturesContainer {
-    padding: 3rem 20px;
+    padding: 3rem 7rem;
     background-color: #f9f9f9;
 }
 
@@ -449,6 +449,10 @@ button[type="submit"]:hover .loader{
     .workshopIntro,.workshopPresentationContainer{
         padding:0 4rem;
     }
+    
+    .programFeaturesContainer {
+        padding: 3rem 4rem;
+    }
     .card-container {
         margin-top: 40px;
         grid-template-columns: 1fr 1fr;
@@ -470,6 +474,9 @@ button[type="submit"]:hover .loader{
     }
     .why-choose-us {
         padding: 0 2rem;
+    }
+    .programFeaturesContainer {
+        padding: 3rem 2rem;
     }
     
     .sectionsHeaders {

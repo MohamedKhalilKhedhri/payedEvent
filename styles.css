@@ -342,24 +342,24 @@ button[type="submit"]:hover .loader{
     margin: 3rem 0 0;
 
 }
-.InfoSection{
-    
+.InfoSection {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 15px;
-   
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: stretch; /* Ensures all grid items align to the tallest item */
 }
-.aboutInfo{
+
+.aboutInfo {
     padding: 20px;
-    color:white;
+    color: white;
     background-color: #088F8Fed;
     display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: column;
-
-
-   
+    justify-content: center; /* Centers the content vertically */
+    height: 100%; /* Ensures items stretch equally */
+    text-align: center;
 }
 .aboutSection>h1{
     font-size: clamp(1rem, 3vw + 0.75rem, 3rem);  
@@ -370,6 +370,11 @@ button[type="submit"]:hover .loader{
 .aboutInfo>p{
     font-size: clamp(0.75rem, 1rem, 1.25rem);  
     line-height: 3rem;
+    width: 100%;
+    text-align: center;
+}
+.aboutInfo>h2{
+    text-align: center;
 }
 /*workshop intro*/
 .workshopIntro{

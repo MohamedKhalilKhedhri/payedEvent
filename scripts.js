@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
+    const phoneInput = document.getElementById('phone_number');
+    const countryCodeSelect = document.getElementById('country-code');
     const nameError = document.getElementById('name-error');
     const nameLengthError = document.getElementById('name-length-error');
     const emailError = document.getElementById('email-error');
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = document.getElementById('submit');
     const eventMessage = document.querySelector('.event-message');
     const form = document.getElementById('myForm');
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlH-jyVJQP10nStHqrkuPVcWkL8ruJI_sbsaUJjuwLLz2OuE17YgcQHUl4HU5Nb4heTQ/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkBm6TP4-sdR0ZknYxeT6R3GNASCwVx5C_DK1BRVjsvRj7L4MCfcNkd5WwclRmRWoc/exec';
 
     loader.style.display = 'none';
     submitBtn.disabled = false;
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (remainingTime < 0) {
             if (remainingTimeAfterEvent > 0) {
                 clearInterval(interval);
-                eventMessage.innerHTML = "<p>الفعالية تبدأ اليوم في الساعة 6 مساءً بتوقيت الكويت على Microsoft Teams</p>";
+                eventMessage.innerHTML = "<p>الفعالية تبدأ اليوم في الساعة 7 مساءً بتوقيت الكويت على Microsoft Teams</p>";
                 displayCountdown(0, 0, 0, 0);
             } else {
                 clearInterval(interval);
@@ -89,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-        // Validate Phone number for Kuwait (8 digits)
+        // Validate Phone Number (numeric check)
         if (phoneInput.value.trim()) {
-            const phonePattern = /^\d{8}$/; // Matches exactly 8 digits
+            const phonePattern = /^\d+$/; // Matches numeric values only
             if (phonePattern.test(phoneInput.value)) {
                 phoneError.style.display = 'none';
                 phoneErrorFormat.style.display = 'none';
@@ -106,9 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-
         if (isValid) {
             const formData = new FormData(form);
+   
+            // Append concatenated phone number
+            const countryCode = countryCodeSelect.value;
+            const phoneNumber = phoneInput.value.trim();
+            formData.append('phone', `${countryCode}${phoneNumber}`);
+
             fetch(scriptURL, {
                 method: 'POST',
                 body: formData,
